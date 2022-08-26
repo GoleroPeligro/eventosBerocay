@@ -42,6 +42,8 @@ body {
     display: flexbox;
     text-align: center;
     overflow: auto;
+    scrollbar-color: cyan #fff;
+    scrollbar-width: thin;
 }
 
 h2 {
