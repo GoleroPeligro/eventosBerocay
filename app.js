@@ -64,7 +64,7 @@ const mostrarDatos = (e) => {
         if (verUsuarios.className == '') {
             verUsuarios.className += "divDatos";
         }
-        verUsuarios.innerHTML = '<h3>Listada de usuarios:</h3>';
+        verUsuarios.innerHTML = '<h3>Lista de usuarios:</h3>';
         for (const datos of usuarios) {
             verUsuarios.innerHTML += `
         <p><strong>Nombre: </strong>${datos.nombre}</p>
