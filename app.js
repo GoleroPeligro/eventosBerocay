@@ -15,7 +15,7 @@ let bandera = false
 //DOM
 
 let form = document.getElementById('formulario');
-
+let inputNom = document.getElementById('inom');
 let verUsuarios = document.getElementById('ver-usuarios');
 let btnMostrar = document.getElementById('btnMostrar');
 
@@ -25,7 +25,7 @@ let iNombre = form.children[0].value;
 let iApellido = form.children[1].value;
 let iEmail = form.children[2].value;
 
-
+inputNom.focus();
 
 //Funciones
 const validarDatos =()=> {
@@ -53,6 +53,8 @@ const agregarDatos = (e) => {
         datos.children[0].value = "";
         datos.children[1].value = "";
         datos.children[2].value = "";
+        
+        inputNom.focus();
     }
 }
 
@@ -77,5 +79,5 @@ const mostrarDatos = (e) => {
 
 //Eventos
 
-form.addEventListener('submit', agregarDatos)
-btnMostrar.addEventListener('click', mostrarDatos)
+form.onsubmit = agregarDatos;
+btnMostrar.onclick = mostrarDatos;
