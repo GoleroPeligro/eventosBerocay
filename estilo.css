@@ -15,14 +15,15 @@ body {
     top: 50%;
     left: 25%;
     width: 400px;
+    height: 75%; 
     padding: 40px;
     transform: translate(-50%, -50%);
-    /* background: rgba(0, 0, 0, .5); */
     background: magenta;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
     display: flexbox;
+    overflow: auto;
 }
 
 .divDatos{
@@ -30,9 +31,9 @@ body {
     top: 50%;
     left: 75%;
     width: 400px;
+    height: 75%; 
     padding: 40px;
     transform: translate(-50%, -50%);
-    /* background: rgba(0, 0, 0, .5); */
     background: magenta;
     color: #fff;
     box-sizing: border-box;
@@ -40,6 +41,7 @@ body {
     border-radius: 10px;
     display: flexbox;
     text-align: center;
+    overflow: auto;
 }
 
 h2 {
